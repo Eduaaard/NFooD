@@ -16,7 +16,6 @@ header .blob
     position: relative
     z-index: 1
     padding-top: 32px
-    min-height: 1150px
     .row
         display: flex
         align-items: center
@@ -37,10 +36,11 @@ header .blob
                 list-style: none
                 margin-right: 40px
                 &:hover
-                    color: $mainColor
+                    color: $mainColor 
     &__btns
         display: flex
         align-content: center
+        
 
         &-theme, &-language
             width: 70px
@@ -51,6 +51,8 @@ header .blob
             background-color: white
             border-radius: 10px 
             margin-right: 15px
+            &:hover
+                box-shadow: inset 0px 0px 5px 5px gray
         &-login
             width: 125px
             height: 44px
@@ -58,5 +60,7 @@ header .blob
             background-color: white
             color: black
             border-radius: 10px
+            &:hover
+                box-shadow: inset 0px 0px 18px 5px gray
 
-    
+
