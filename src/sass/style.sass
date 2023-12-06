@@ -64,3 +64,41 @@ header .blob
                 box-shadow: inset 0px 0px 18px 5px gray
 
 
+.header-body
+    padding-top: 210px
+    position: relative
+    &__first-text
+        font-family: 'Playfair Display', serif
+        font-size: 54px
+        font-weight: 700
+    &__description
+        padding-top: 50px
+        font-family: "Raleway", sans-serif
+        font-size: 16px
+        font-weight: 400
+    &__btns
+        padding-top: 65px
+        display: flex
+        &-order
+            background: $mainColor
+            color: white
+            border: none
+            border-radius: 10px
+            width: 210px
+            height: 60px
+            margin-right: 40px
+        &-detail
+            // background: white
+            // background-color: blue
+            color: $mainColor
+            background: transparent
+            border-color: $mainColor
+            border-radius: 10px
+            width: 210px
+            height: 60px
+        &__food
+            position: absolute
+            left: 100%
+            transform: translateX(-100%)
+
+

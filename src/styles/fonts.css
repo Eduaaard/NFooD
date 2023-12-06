@@ -1,7 +1,7 @@
 @font-face {
     font-weight: 700;
     font-style: Bold;
-    font-family: PlayfairDisplay;
+    font-family: "PlayfairDisplay";
     src: local("PlayfairDisplay"),
         url("../fonts/PlayfairDisplay-Bold.eot") format(".eot"),
         url("../fonts/PlayfairDisplay-Bold.woff") format(".woff"),

@@ -71,4 +71,46 @@ header .blob {
 }
 .header-top__btns-login:hover {
   box-shadow: inset 0px 0px 18px 5px gray;
+}
+
+.header-body {
+  padding-top: 210px;
+  position: relative;
+}
+.header-body__first-text {
+  font-family: "Playfair Display", serif;
+  font-size: 54px;
+  font-weight: 700;
+}
+.header-body__description {
+  padding-top: 50px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.header-body__btns {
+  padding-top: 65px;
+  display: flex;
+}
+.header-body__btns-order {
+  background: #F08C1F;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 210px;
+  height: 60px;
+  margin-right: 40px;
+}
+.header-body__btns-detail {
+  color: #F08C1F;
+  background: transparent;
+  border-color: #F08C1F;
+  border-radius: 10px;
+  width: 210px;
+  height: 60px;
+}
+.header-body__btns__food {
+  position: absolute;
+  left: 100%;
+  transform: translateX(-100%);
 }/*# sourceMappingURL=style.css.map */
