@@ -109,8 +109,10 @@ header .blob {
   width: 210px;
   height: 60px;
 }
-.header-body__btns__food {
+.header-body__food img {
+  z-index: 1;
   position: absolute;
   left: 100%;
+  top: 5%;
   transform: translateX(-100%);
 }/*# sourceMappingURL=style.css.map */
