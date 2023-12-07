@@ -115,4 +115,79 @@ header .blob {
   left: 100%;
   top: 5%;
   transform: translateX(-100%);
+}
+
+.characteristic-text {
+  margin: 0 auto;
+  padding-top: 25%;
+}
+.characteristic-text__first-text {
+  text-align: center;
+  color: #F08C1F;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.characteristic-text__second-text {
+  font-family: Playfair Display;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.characteristic-first-block {
+  padding-top: 20%;
+}
+.characteristic-first-block__img {
+  margin-left: 26%;
+}
+.characteristic-first-block__main-text {
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.characteristic-first-block__second-text {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.characteristic-second-block {
+  padding-top: 20%;
+}
+.characteristic-second-block__img {
+  margin-left: 26%;
+}
+.characteristic-second-block__main-text {
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.characteristic-second-block__second-text {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.characteristic-third-block {
+  padding-top: 20%;
+}
+.characteristic-third-block__img {
+  margin-left: 26%;
+}
+.characteristic-third-block__main-text {
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.characteristic-third-block__second-text {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  margin-top: 25px;
 }/*# sourceMappingURL=style.css.map */
