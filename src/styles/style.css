@@ -143,51 +143,23 @@ header .blob {
   font-weight: 700;
 }
 
-.characteristic-first-block {
+.characteristic-block {
+  position: relative;
   padding-top: 20%;
+  z-index: 1;
 }
-.characteristic-first-block__img {
-  margin-left: 26%;
+.characteristic-block__image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.characteristic-first-block__main-text {
+.characteristic-block__main-text {
   text-align: center;
   font-family: Playfair Display;
   font-size: 25px;
   margin-top: 20px;
 }
-.characteristic-first-block__second-text {
-  text-align: center;
-  font-family: Raleway;
-  font-size: 16px;
-  margin-top: 25px;
-}
-
-.characteristic-second-block {
-  padding-top: 20%;
-}
-.characteristic-second-block__main-text {
-  text-align: center;
-  font-family: Playfair Display;
-  font-size: 25px;
-  margin-top: 20px;
-}
-.characteristic-second-block__second-text {
-  text-align: center;
-  font-family: Raleway;
-  font-size: 16px;
-  margin-top: 25px;
-}
-
-.characteristic-third-block {
-  padding-top: 20%;
-}
-.characteristic-third-block__main-text {
-  text-align: center;
-  font-family: Playfair Display;
-  font-size: 25px;
-  margin-top: 20px;
-}
-.characteristic-third-block__second-text {
+.characteristic-block__second-text {
   text-align: center;
   font-family: Raleway;
   font-size: 16px;
@@ -200,6 +172,7 @@ header .blob {
 .about-blob {
   position: relative;
   bottom: 375px;
+  opacity: 0.3;
 }
 .about-blob img {
   width: 705px;
@@ -269,12 +242,14 @@ header .blob {
   border: 2px solid rgba(217, 217, 217, 0.5);
   width: 460px;
   height: 596px;
+  position: relative;
+  z-index: 1;
 }
 .menu__item-picture img {
   border-radius: 100px 0 100px 4px;
 }
 .menu__item_other {
-  display: flex;
+  display: fle;
 }
 .menu__item_other-add {
   width: 50px;
