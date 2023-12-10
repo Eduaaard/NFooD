@@ -7,6 +7,10 @@
     height: 60px
     margin-right: 40px
 
+@media (min-width: 1400px) 
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl 
+        max-width: 1460px
+  
 
 $mainColor: #F08C1F
     
@@ -25,9 +29,7 @@ header .blob
     position: relative
     z-index: 1
     padding-top: 32px
-    .row
-        display: flex
-        align-items: center
+ 
     &__logo
         width: 210px
         height: 48px
@@ -184,8 +186,7 @@ header .blob
         height: 590px
         position: relative
         right: 65px
-        // &
-        //     
+
 
 
     &__descr
@@ -214,3 +215,74 @@ header .blob
 
 
 
+.menu
+    
+    &__description
+        text-align: center
+        &-subtitle
+            color: $mainColor
+            font-size: 24px
+            font-style: normal
+        &-title
+            font-family: Playfair Display
+            font-size: 32px
+        &-descr
+            margin-top: 25px
+            text-align: center
+            font-size: 16px
+
+    .row
+        margin-top: 40px
+
+    &__item
+        border-radius: 100px 15px 15px 15px
+        border: 2px solid rgba(217, 217, 217, 0.50)
+        width: 460px
+        height: 596px
+        
+        &-picture img
+            border-radius: 100px 0 100px 4px
+
+        &_other
+            display: flex
+     
+            &-add
+                width: 50px
+                height: 50px
+                background-color: $mainColor
+                display: flex
+                justify-content: space-around
+                align-items: center
+                border-radius: 10px
+
+            &-rating
+                margin-left: 230px
+        &_main-descr
+            margin-top: 5px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            &-title
+               color: #000
+               font-family: Playfair Display
+               font-size: 32px
+            &-price
+                color: #000
+                font-family: Playfair Display
+                font-size: 32px
+            
+                
+            
+        &-other-descr, &_main-descr, &-rating, &_other 
+            padding: 0 30px 22px 30px
+
+    
+            
+
+
+
+        
+            
+
+
+   
