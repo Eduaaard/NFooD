@@ -10,6 +10,12 @@
   box-sizing: border-box;
 }
 
+header .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header .blob {
   z-index: 0;
   position: absolute;
@@ -31,6 +37,7 @@ header .blob {
   justify-content: center;
   align-items: center;
   margin: 0;
+  word-wrap: normal;
 }
 .header-top__menu a {
   text-decoration: none;
@@ -158,9 +165,6 @@ header .blob {
 .characteristic-second-block {
   padding-top: 20%;
 }
-.characteristic-second-block__img {
-  margin-left: 26%;
-}
 .characteristic-second-block__main-text {
   text-align: center;
   font-family: Playfair Display;
@@ -176,9 +180,6 @@ header .blob {
 
 .characteristic-third-block {
   padding-top: 20%;
-}
-.characteristic-third-block__img {
-  margin-left: 26%;
 }
 .characteristic-third-block__main-text {
   text-align: center;
@@ -207,24 +208,24 @@ header .blob {
   position: absolute;
 }
 .about-women {
-  width: 680px;
+  width: 710px;
   height: 590px;
   position: relative;
   right: 65px;
 }
 .about__descr-hint {
-  margin-top: 120px;
+  margin-top: 75px;
   color: #F08C1F;
   font-size: 16px;
 }
 .about__descr-title {
   font-family: "Playfair Display", serif;
-  font-size: 25px;
+  font-size: 32px;
   word-wrap: normal;
 }
 .about__descr-subtitle {
   margin-top: 30px;
-  font-size: 10px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;

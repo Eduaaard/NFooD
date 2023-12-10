@@ -20,6 +20,12 @@ $mainColor: #F08C1F
     margin: 0
     box-sizing: border-box
 
+header
+    .row
+        display: flex
+        justify-content: center
+        align-items: center
+        
 header .blob
     z-index: 0
     position: absolute
@@ -38,6 +44,7 @@ header .blob
         justify-content: center
         align-items: center
         margin: 0
+        word-wrap: normal
         a
             text-decoration: none
             li
@@ -141,8 +148,7 @@ header .blob
 
 .characteristic-second-block
     padding-top: 20%
-    &__img
-        margin-left: 26%
+
     &__main-text
         text-align: center
         font-family: Playfair Display
@@ -156,8 +162,7 @@ header .blob
 
 .characteristic-third-block
     padding-top: 20%
-    &__img
-        margin-left: 26%
+
     &__main-text
         text-align: center
         font-family: Playfair Display
@@ -182,7 +187,7 @@ header .blob
 
 
     &-women
-        width: 680px
+        width: 710px
         height: 590px
         position: relative
         right: 65px
@@ -192,17 +197,17 @@ header .blob
     &__descr
         
         &-hint
-            margin-top: 120px
+            margin-top: 75px
             color: $mainColor
             font-size: 16px
             
         &-title
             font-family: 'Playfair Display', serif
-            font-size: 25px
+            font-size: 32px
             word-wrap: normal
         &-subtitle
             margin-top: 30px
-            font-size: 10px
+            font-size: 16px
             font-style: normal
             font-weight: 400
             line-height: 140%
