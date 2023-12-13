@@ -50,7 +50,7 @@ header .blob {
   margin-right: 40px;
 }
 .header-top__menu a li:hover {
-  color: #F08C1F;
+  color: rgb(240, 140, 31);
 }
 .header-top__btns {
   display: flex;
@@ -101,7 +101,7 @@ header .blob {
   display: flex;
 }
 .header-body__btns-order {
-  background: #F08C1F;
+  background: rgb(240, 140, 31);
   color: white;
   border: none;
   border-radius: 10px;
@@ -110,9 +110,9 @@ header .blob {
   margin-right: 40px;
 }
 .header-body__btns-detail {
-  color: #F08C1F;
+  color: rgb(240, 140, 31);
   background: transparent;
-  border-color: #F08C1F;
+  border-color: rgb(240, 140, 31);
   border-radius: 10px;
   width: 210px;
   height: 60px;
@@ -131,7 +131,7 @@ header .blob {
 }
 .characteristic-text__first-text {
   text-align: center;
-  color: #F08C1F;
+  color: rgb(240, 140, 31);
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -188,7 +188,7 @@ header .blob {
 }
 .about__descr-hint {
   margin-top: 75px;
-  color: #F08C1F;
+  color: rgb(240, 140, 31);
   font-size: 16px;
 }
 .about__descr-title {
@@ -205,7 +205,7 @@ header .blob {
   word-wrap: normal;
 }
 .about__descr button {
-  background: #F08C1F;
+  background: rgb(240, 140, 31);
   color: white;
   border: none;
   border-radius: 10px;
@@ -217,11 +217,21 @@ header .blob {
   height: 50px;
 }
 
+.menu__button {
+  color: rgb(240, 140, 31);
+  background: transparent;
+  border-color: rgb(240, 140, 31);
+  border-radius: 10px;
+  width: 210px;
+  height: 60px;
+  display: block;
+  margin: 80px auto 0 auto;
+}
 .menu__description {
   text-align: center;
 }
 .menu__description-subtitle {
-  color: #F08C1F;
+  color: rgb(240, 140, 31);
   font-size: 24px;
   font-style: normal;
 }
@@ -234,10 +244,8 @@ header .blob {
   text-align: center;
   font-size: 16px;
 }
-.menu .row {
-  margin-top: 40px;
-}
 .menu__item {
+  margin-top: 40px;
   border-radius: 100px 15px 15px 15px;
   border: 2px solid rgba(217, 217, 217, 0.5);
   width: 460px;
@@ -249,19 +257,21 @@ header .blob {
   border-radius: 100px 0 100px 4px;
 }
 .menu__item_other {
-  display: fle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu__item_other-add {
   width: 50px;
   height: 50px;
-  background-color: #F08C1F;
+  background-color: rgb(240, 140, 31);
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-radius: 10px;
 }
 .menu__item_other-rating {
-  margin-left: 230px;
+  margin-left: 225px;
 }
 .menu__item_main-descr {
   margin-top: 5px;
@@ -281,4 +291,158 @@ header .blob {
 }
 .menu__item-other-descr, .menu__item_main-descr, .menu__item-rating, .menu__item_other {
   padding: 0 30px 22px 30px;
+}
+
+.reviews {
+  margin-top: 120px;
+  text-align: center;
+}
+.reviews__hint {
+  color: rgb(240, 140, 31);
+  font-size: 16px;
+}
+.reviews__title {
+  margin-top: 10px;
+  font-family: Playfair Display;
+  font-size: 32px;
+}
+.reviews__descr {
+  position: relative;
+  margin-top: 25px;
+  font-size: 16px;
+  margin-bottom: 75px;
+}
+.reviews__blob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviews__blob-image {
+  position: absolute;
+  width: 231px;
+  height: 224px;
+  opacity: 0.3;
+}
+.reviews__blob-people {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.reviews .container .row:last-child {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 75px;
+}
+.reviews__content-rank {
+  margin-top: 15px;
+}
+.reviews__content-other {
+  margin-top: 15px;
+}
+
+.footer-top {
+  margin-top: 220px;
+  padding-top: 115px;
+  height: 480px;
+  background-color: rgba(240, 140, 31, 0.2);
+}
+.footer-top__first-text {
+  text-align: center;
+  color: rgb(240, 140, 31);
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-top__second-text {
+  font-family: Playfair Display;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+.footer-top__buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.footer-top__buttons-input {
+  width: 790px;
+  height: 75px;
+  padding-left: 40px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.02), 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.03), 0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.04), 0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.04), 0px 41.778px 33.422px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+}
+.footer-top__buttons-button {
+  width: 165px;
+  background-color: rgb(240, 140, 31);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  box-shadow: 0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.02), 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.03), 0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.04), 0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.04), 0px 41.778px 33.422px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+}
+
+.footer-bottom {
+  height: 250px;
+  background-color: #000;
+}
+
+.footer-bottom-menu {
+  margin-bottom: 0px;
+  padding-top: 10%;
+}
+.footer-bottom-menu .row {
+  display: flex;
+  align-items: center;
+}
+.footer-bottom-menu__nav {
+  padding-top: 1.4%;
+}
+.footer-bottom-menu__logo {
+  width: 210px;
+  height: 48px;
+  display: flex;
+}
+.footer-bottom-menu__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-wrap: normal;
+}
+.footer-bottom-menu__menu a {
+  text-decoration: none;
+}
+.footer-bottom-menu__menu a li {
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  list-style: none;
+  margin-right: 40px;
+}
+.footer-bottom-menu__menu a li:hover {
+  color: rgb(240, 140, 31);
+}
+.footer-bottom-menu-end {
+  display: flex;
+}
+.footer-bottom-menu-end__contact {
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  list-style: none;
+  margin-right: 40px;
+}
+.footer-bottom-menu-end__contact:hover {
+  color: rgb(240, 140, 31);
+}
+.footer-bottom-menu-end__email {
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  list-style: none;
+  margin-right: 40px;
+}
+.footer-bottom-menu-end__email:hover {
+  color: rgb(240, 140, 31);
 }/*# sourceMappingURL=style.css.map */

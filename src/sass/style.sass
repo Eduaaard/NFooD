@@ -7,12 +7,22 @@
     height: 60px
     margin-right: 40px
 
+@mixin borderButton
+    color: $mainColor
+    background: transparent
+    border-color: $mainColor
+    border-radius: 10px
+    width: 210px
+    height: 60px
+    
 @media (min-width: 1400px) 
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl 
         max-width: 1460px
 
 
-$mainColor: #F08C1F
+
+$mainColor: rgb(240, 140, 31)
+$orangeAnimationColor: rgba(240, 140, 31, 1)
     
 * 
     font-family: "Raleway", sans-serif 
@@ -81,7 +91,6 @@ header .blob
             &:hover
                 box-shadow: inset 0px 0px 18px 5px gray
 
-
 .header-body
     padding-top: 210px
     position: relative
@@ -101,12 +110,8 @@ header .blob
             @include orangeButton 
             
         &-detail
-            color: $mainColor
-            background: transparent
-            border-color: $mainColor
-            border-radius: 10px
-            width: 210px
-            height: 60px
+            @include borderButton
+            
     &__food img
         z-index: 1
         position: absolute
@@ -201,7 +206,10 @@ header .blob
 
 
 .menu
-    
+    &__button
+        @include borderButton
+        display: block
+        margin: 80px auto 0 auto
     &__description
         text-align: center
         &-subtitle
@@ -216,10 +224,11 @@ header .blob
             text-align: center
             font-size: 16px
 
-    .row
-        margin-top: 40px
+
+        
 
     &__item
+        margin-top: 40px
         border-radius: 100px 15px 15px 15px
         border: 2px solid rgba(217, 217, 217, 0.50)
         width: 460px
@@ -230,7 +239,9 @@ header .blob
             border-radius: 100px 0 100px 4px
 
         &_other
-            display: fle
+            display: flex
+            justify-content: center
+            align-items: center
             &-add
                 width: 50px
                 height: 50px
@@ -241,7 +252,7 @@ header .blob
                 border-radius: 10px
 
             &-rating
-                margin-left: 230px
+                margin-left: 225px
         &_main-descr
             margin-top: 5px
             display: flex
@@ -260,3 +271,141 @@ header .blob
             
         &-other-descr, &_main-descr, &-rating, &_other 
             padding: 0 30px 22px 30px
+
+
+.reviews
+    margin-top: 120px
+    text-align: center
+    &__hint
+        color: $mainColor
+        font-size: 16px
+    &__title
+        margin-top: 10px
+        font-family: Playfair Display
+        font-size: 32px
+    &__descr
+        position: relative
+        margin-top: 25px
+        font-size: 16px
+        margin-bottom: 75px
+    &__blob
+        display: flex
+        justify-content: center
+        align-items: center
+        
+    &__blob-image
+        position: absolute
+        width: 231px
+        height: 224px
+        opacity: 0.3
+
+    &__blob-people
+        width: 100px
+        height: 100px
+        position: relative
+
+    .container
+        .row:last-child
+            display: flex
+            align-items: flex-start
+            margin-top: 75px
+            
+    &__content
+        &-rank
+            margin-top: 15px
+        &-other
+            margin-top: 15px
+
+
+.footer-top
+    margin-top: 220px
+    padding-top: 115px
+    height: 480px
+    background-color: rgba(240, 140, 31, 0.2)
+    &__first-text
+        text-align: center
+        color: $mainColor
+        font-family: 'Raleway', sans-serif
+        font-size: 16px
+        font-weight: 400
+    &__second-text
+        font-family: Playfair Display
+        text-align: center
+        font-size: 32px
+        font-weight: 700
+    &__buttons
+        display: flex
+        justify-content: center
+        padding-top: 40px
+        
+
+        &-input
+            width: 790px
+            height: 75px
+            padding-left: 40px
+            font-family: 'Raleway', sans-serif
+            font-size: 16px
+            border-radius: 10px
+            border: none
+            box-shadow: 0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.02), 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.03), 0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.04), 0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.04), 0px 41.778px 33.422px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07)
+        &-button
+            width: 165px
+            background-color: $mainColor
+            border-radius: 10px
+            border: none
+            color: white
+            box-shadow: 0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.02), 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.03), 0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.04), 0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.04), 0px 41.778px 33.422px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07)
+
+.footer-bottom
+    height: 250px
+    background-color: #000
+
+    
+.footer-bottom-menu
+    margin-bottom: 0px
+    .row
+        display: flex
+        align-items: center
+
+    padding-top: 10%
+    &__nav
+        padding-top: 1.4%
+    &__logo
+        width: 210px
+        height: 48px
+        display: flex
+    &__menu
+        display: flex
+        justify-content: center
+        align-items: center
+        word-wrap: normal
+        // padding-top: 6%
+        
+        a
+            text-decoration: none
+            li
+                font-weight: 500
+                font-size: 16px
+                color: white
+                list-style: none
+                margin-right: 40px
+                &:hover
+                    color: $mainColor 
+    &-end
+        display: flex
+        &__contact
+            font-weight: 500
+            font-size: 16px
+            color: white
+            list-style: none
+            margin-right: 40px
+            &:hover
+                color: $mainColor 
+        &__email
+            font-weight: 500
+            font-size: 16px
+            color: white
+            list-style: none
+            margin-right: 40px
+            &:hover
+                color: $mainColor

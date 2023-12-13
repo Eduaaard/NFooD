@@ -7,6 +7,7 @@
     <title>NFooD</title>
     <link rel="stylesheet" href="/src/style/fonts.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="/src/styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -370,16 +371,112 @@
                             </div>
                             
                         </div>
-                    </div>
-                
-
-                
-
-               
+                    </div>    
             </div>
+            <button class="menu__button">Смотреть еще</button>
         </div>
     </section>
 
-</body>
+    <section class="reviews">
+        <div class="container align-items-center">
+            <div class="reviews__hint">Отзывы</div>
+            <div class="reviews__title">Отзывы нашего ресторана NFooD – это сердце нашей семьи</div>
+            <div class="reviews__descr">NFooD – это не просто еда, это волшебство в каждой тарелке!" - говорит наш гость Мария. <br>Мы гордимся тем, что наши блюда становятся частью ваших важных моментов и создают<br>воспоминания, которые хранятся в ваших сердцах</div>
 
+            <div class="row">
+                <div class="col-xl-2 offset-xl-5">
+                     <div class="reviews__blob">
+                         <img src="/src/img/5-Reviews/blob.png" alt="blob" class="reviews__blob-image">
+                         <img src="/src/img/5-Reviews/avatars/1.png" alt="1" class="reviews__blob-people">
+                     </div>
+                </div>
+             </div>
+     
+             <div class="row">
+                 <div class="col-xl-1 offset-xl-1">
+                     <img src="/src/img/5-Reviews/arrow-to-left.svg" alt="left" class="arrow">
+                 </div>
+     
+                 <div class="col-xl-4 offset-xl-2">
+                     <div class="reviews__content">
+                         <div class="reviews__content-text">Посещение ресторана NFooD превзошло все мои ожидания! Отсамого момента входа меня поразила атмосфера – уютное и стильное пространство, которое сразу же создает ощущение особенного вечера. Обслуживание на высшем уровне, персонал профессиональный и внимательный.</div>
+                         <div class="reviews__content-rank">
+                             <img src="/src/img/4-Menu/Full-star.svg" alt="★">
+                             <img src="/src/img/4-Menu/Full-star.svg" alt="★">
+                             <img src="/src/img/4-Menu/Full-star.svg" alt="★">
+                             <img src="/src/img/4-Menu/Full-star.svg" alt="★">
+                             <img src="/src/img/4-Menu//Not-full-star.svg" alt="✰">
+                         </div>
+                         <div class="reviews__content-other">
+                             From Bert Smittson to Cameron Willing <br>(Octover 22, 2022)
+                         </div>
+                 </div>
+     
+                 
+             </div>
+             <div class="col-xl-1 offset-xl-2">
+                <img src="/src/img/5-Reviews/arrow-to-right.svg" alt="right" class="arrow">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-top__first-text">
+                Контакты
+            </div>
+            <div class="footer-top__second-text">
+                Продуктовые киоски с людьми, а также специализированное<br> оборудование, навыки управления.
+            </div>
+            <div class="footer-top__buttons">
+                <input type="text" placeholder="Введите ваше сообщение" class="footer-top__buttons-input">
+                <button type="submit" class="footer-top__buttons-button">Отправить</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-menu">
+                    <div class="row">
+                        <div class="col-xl-2">
+                            <img src="/src/img/Logo/white_logo.png" alt="" class="footer-bottom-menu__logo">
+                        </div>
+                        <div class="col-xl-6">
+                            <nav class="footer-bottom-menu__nav">
+                                <ul class="footer-bottom-menu__menu">
+                                    <a href="#">
+                                        <li>Главная страница</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>О нас</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Меню</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Отзывы</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Контакты</li>
+                                    </a>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col">
+                            <div class="footer-bottom-menu-end">
+                                <div class="footer-bottom-menu-end__contact">
+                                    Phone: +998 (93) 804 - 03 - 33
+                                </div>
+                                <div class="footer-bottom-menu-end__email">
+                                    NFooD@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+    <script src="/src/js/script.js"></script>
 </html>
