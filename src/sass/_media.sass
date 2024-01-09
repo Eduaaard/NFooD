@@ -1,0 +1,502 @@
+@mixin navigationCircle
+     width: 45px
+     height: 45px
+     background-color: white
+     filter: drop-shadow(0px 2.767px 2.214px rgba(0, 0, 0, 0.02)) drop-shadow(0px 6.65px 5.32px rgba(0, 0, 0, 0.03)) drop-shadow(0px 12.522px 10.017px rgba(0, 0, 0, 0.04)) drop-shadow(0px 22.336px 17.869px rgba(0, 0, 0, 0.04)) drop-shadow(0px 41.778px 33.422px rgba(0, 0, 0, 0.05)) drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07))
+     display: flex
+     justify-content: center
+     align-items: center
+     border-radius: 100%
+     cursor: pointer
+
+@media (max-width:  1665px)
+    header
+        .blob 
+            width: 650px
+        .header-body__first-text
+            font-size: 43px
+        
+        .header-body__food img
+            width: 800px
+            left: 100%
+        
+        .header-top__menu a li 
+            margin-right: 23px
+
+    .about
+        .about__descr
+            margin: 0
+            .about__descr-hint
+                margin-top: 70px
+            
+        .about-women 
+            max-width: 580px
+
+        .about__btn
+            margin: 35px auto
+ 
+
+@media (max-width:  1399px)
+    header .header-body__description
+        position: relative
+        z-index: 5
+        width: 485px
+    header
+        .blob 
+            width: 560px    
+        .header-body__first-text
+            font-size: 40px
+    
+    .about
+        display: block
+        .about-women
+            max-width: 505px
+        .about__descr-title
+            font-size: 26px
+        .about__descr-subtitle
+            font-size: 14px
+
+    
+    .menu 
+        .menu__item-picture img
+            width: 360px
+        .menu__item_other-rating
+            margin-left: 125px
+    
+
+@media (max-width: 1200px)
+
+    header .header-top__logo, footer .footer-bottom-menu__logo
+        width: 180px
+    header
+        .blob 
+            left: 103%
+            width: 404px
+    header 
+        .header-body
+            padding-top: 100px
+
+    header .header-body__first-text 
+        font-size: 34px
+        width: 500px
+        position: relative
+        z-index: 5
+    
+    header .header-body__food img 
+        bottom: -70px
+        left: 100%
+        width: 550px
+        height: 565px
+        
+    
+    .characteristic .characteristic-block__second-text 
+        font-size: 14px
+
+    .about
+        display: block
+        .about-women 
+            width: 455px
+            position: relative
+            top: 40px
+        .about__descr-title
+            font-size: 25px
+        .about__descr-subtitle
+            font-size: 14px
+        .about-blob img
+            width: 375px
+            height: 1520px
+
+    .menu
+        .menu__item 
+            width: 300px
+            height: 550px
+            
+            .menu__item-picture img
+                width: 300px
+            .menu__item_other-rating
+                margin-left: 65px
+            .menu__item-other-descr
+                height: 140px
+                
+            
+    footer
+        ul
+            padding-left: 0
+        .footer-top__second-text
+            font-size: 29px
+        .footer-top__buttons-input
+            width: 600px
+        .footer-bottom-menu__menu
+            margin-top: 20px
+            justify-content: flex-start
+        .footer-bottom-menu
+            padding-top: 5%
+    
+    
+@media (max-width: 992px)
+    header .blob 
+        top: -351px
+
+
+    header .header-body__food img
+        // bottom: 99px
+        // left: 100%
+        // width: 424px
+        // height: 428px
+        display: none
+    
+        
+        
+    .about
+        display: block
+        margin-top: -140px
+
+    .header-top__menu, .header-top__btns
+        position: fixed
+        left: -200%
+        transition: 0.6s all
+        
+        
+    .header-top__menu
+        background: rgba(0, 0, 0, 0.80)
+        backdrop-filter: blur(15px)
+        // display: flex
+        // justify-content: center
+        // align-items: center
+        height: 100%
+        width: 100%
+        top: 0 
+        
+
+    .header-top__btns
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+    
+    
+    
+    .header-top__menu-active, .header-top__btns-active
+        left: 0
+        z-index: 5
+        
+
+        
+        
+        
+    .header-top_hamburger
+        margin-top: 15px
+        border-radius: 10px
+        background-color: white
+        box-shadow: 0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.02), 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.03), 0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.04), 0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.04), 0px 41.778px 33.422px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07)
+        width: 90px
+        height: 65px
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    
+        span
+            margin-top: 6px
+            background-color: black
+            z-index: 5
+            display: block
+            height: 5px
+            width: 50%
+            &:first-child
+                margin-top: 0px
+        // &:active
+            
+        //     transition: 0.3s all
+            
+        //     background-color: red
+        
+
+    .row .characteristic-text
+        padding-top: 20%
+    .characteristic .characteristic-block
+        
+        .characteristic-block__image img
+            width: 135px
+        .characteristic-block__main-text
+            font-size: 20px
+        .characteristic-block__second-text
+            font-size: 10px
+            
+
+    .about .about__descr-hint
+        margin-top: 0px
+    .about .about__descr-title
+        font-size: 22px
+    .menu
+        margin-top: 100px
+    .menu .hide
+        display: none
+    .menu .menu__item
+        width: 100%
+        height: 570px
+        .menu__item-picture img
+            width: 100%
+    .reviews
+        height: 565px
+
+    .reviews .reviews__descr
+        font-size: 15px
+
+    .reviews .reviews__content-text
+        font-size: 12px
+    .reviews .reviews__content-rank img
+        width: 24px
+        height: 24px
+
+    .reviews .reviews__content-other
+        font-size: 12px
+    
+    footer .footer-top__buttons
+        width: 600px
+        margin: 0 auto
+    
+    .about .about-women 
+        right: 0
+        display: block
+        margin: 0 auto
+
+    .about__descr
+        text-align: center
+    .about .about__btn
+        display: block
+        margin: 20px auto 0 auto
+        width: 50%
+     
+    header .header-body__food-hide
+        transform: translateX(-100%)
+        position: absolute
+        left: 100%
+        
+    header .header-body__food-hide img
+        display: block
+        position: relative
+    
+    header .header-body__food-divider
+        height: 500px
+        position: relative
+  
+@media (max-width: 767px)
+    header .header-body__food-divider
+        height: 700px
+        position: relative
+
+    footer .footer-top__buttons 
+        width: 500px
+    
+
+    .row .characteristic-text 
+        padding-top: 0%
+
+    .characteristic .characteristic-block .characteristic-block__image img 
+        width: 164px
+
+    .characteristic .characteristic-block .characteristic-block__main-text 
+        font-size: 25px
+
+    .characteristic .characteristic-block .characteristic-block__second-text 
+        font-size: 16px
+
+    .characteristic .hide
+        display: none
+
+    .characteristic .characteristic-arrows
+        display: block
+        margin-top: 190px
+        @include navigationCircle
+        
+        img
+            width: 15px
+            height: 15px
+
+    
+
+    .about .visible
+        display: none
+
+    .about 
+        
+        .about-women
+            text-align: left
+            width: 515px
+        .row .hide
+            text-align: left
+            display: block
+            .about__descr-hint
+                text-align: center
+            .about__descr-title
+                margin-top: 10px
+        .about__btn
+            margin: 80px auto 
+            width: 515px
+            height: 60px
+    body
+        .menu
+            margin-top: 0px
+            &__description-descr
+                font-size: 11px
+            
+            .menu__item
+                height: 615px
+                width: 100%
+                .menu__item-other-descr 
+                    height: 85px
+                .menu__item_other-rating
+                    margin-left: 195px
+                    
+            &-arrows
+                display: block
+                margin-top: 320px 
+                position: relative
+                z-index: 5
+                @include navigationCircle
+
+                img
+                    width: 15px
+                    height: 15px
+            .left
+                left: 37px
+            .right
+                right: 37px
+                    
+            .hide-mobile
+                display: none
+        .reviews 
+            .reviews__descr 
+                width: 390px
+                font-size: 11px
+            .reviews__title
+                font-size: 25px
+            .reviews_arrow
+                position: relative
+                bottom: 150px
+                @include navigationCircle
+                img
+                    width: 15px
+                    height: 15px
+    
+                
+        .footer-top__second-text
+            font-size: 25px
+
+
+@media (max-width: 575px)
+    body
+        header 
+            .blob
+                width: 330px
+            .header-body
+                &__first-text
+                    font-size: 32px
+                    width: 390px
+                &__description
+                    width: 389px
+                    font-size: 12px
+                &__btns-order
+                    width: 188px
+                &__btns-detail
+                    width: 185px
+        .characteristic
+            .row &-text
+                &__second-text
+                    font-size: 27px
+
+        .about
+            margin-top: -420px
+            .about-women
+                top: 20px
+                width: 390px
+                margin: 0
+            .about__btn
+                margin: 0
+                margin-top: 40px
+                width: 390px
+            .about__descr
+                .about__descr-hint
+                    margin-top: 300px
+                .about__descr-title
+                    font-size: 21px
+                    width: 390px
+                .about__descr-subtitle
+                    margin-top: 15px
+                    width: 390px
+                    font-size: 12px
+                
+            .about-blob img 
+                height: 2049px
+
+        .characteristic
+            position: relative
+            z-index: 5
+            .characteristic-block .characteristic-block__second-text
+                font-size: 15px
+
+        footer
+            .footer-bottom
+                height: 310px
+                .footer-bottom-menu__menu
+                    flex-direction: column
+                    align-items: flex-start
+                .footer-bottom-menu-end
+                    flex-direction: column
+            .footer-top
+                &__buttons
+                    width: 100%
+                    margin: 0 auto
+                    &-input
+                        padding-left: 0px
+                        text-align: center
+                        font-size: 14px
+                        width: 205px
+                    &-button
+                        text-align: center
+                        font-size: 16px
+                        width: 185px
+        .menu 
+            .menu__item
+                width: 100%
+                
+                .menu__item_other
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    margin-top: 30px
+                .menu__item_other-rating
+                    margin-left: 0
+                    
+            
+            .menu__description
+                margin-top: 100px
+                .menu__description-title
+                    font-size: 29px
+                .menu__description-descr
+                    font-size: 12px
+
+
+        .reviews .reviews__descr
+            font-size: 13px
+        
+         
+
+
+@media (max-width: 440px)
+    body
+        .menu 
+            .menu__item
+                height: 505px
+                .menu__item-other-descr
+                    font-size: 13px
+                .menu__item_main-descr-title, .menu__item_main-descr-price
+                    font-size: 25px
+        .menu-arrows
+            margin-top: 255px
+            

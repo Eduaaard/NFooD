@@ -1,3 +1,5 @@
+@import "media"
+
 @mixin orangeButton 
     background: $mainColor
     color: white
@@ -6,6 +8,44 @@
     width: 210px
     height: 60px
     margin-right: 40px
+    &:hover
+        background: $orangeAnimationColor
+        transition: .4s
+    &:active
+        color: $mainColor
+        background: transparent
+        border-radius: 10px
+        border: 1px solid $mainColor
+
+@mixin transparentButton
+    color: $mainColor
+    background: transparent
+    border-color: $mainColor
+    border-radius: 10px
+    width: 210px
+    height: 60px
+    &:hover
+        background: $orangeAnimationColor
+        border: none
+        transition: .4s
+        color: white
+    &:active
+        background: $mainColor
+        color: white
+        border: none
+        border-radius: 10px
+        // width: 210px
+        height: 60px
+
+
+@media (min-width: 1400px) 
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl 
+        max-width: 1460px
+
+
+$mainColor: rgb(240, 140, 31)
+$orangeAnimationColor: rgba(240, 140, 31, 0.4)
+
 
 @mixin borderButton
     color: $mainColor
@@ -15,22 +55,23 @@
     width: 210px
     height: 60px
     
-@media (min-width: 1400px) 
-    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl 
-        max-width: 1460px
 
-
-
-$mainColor: rgb(240, 140, 31)
-$orangeAnimationColor: rgba(240, 140, 31, 1)
-    
 * 
     font-family: "Raleway", sans-serif 
     padding: 0
     margin: 0
     box-sizing: border-box
+    
+   
+
+body
+    display: block
+    margin:  0 auto
+
+
 
 header
+    background: url("../img/1-Face/")
     .row
         display: flex
         justify-content: center
@@ -41,11 +82,16 @@ header .blob
     position: absolute
     left: 100%
     transform: translateX(-100%)
+    overflow-x: hidden
+    
 .header-top
     position: relative
     z-index: 1
     padding-top: 32px
-
+    
+    &_burger
+        display: none
+        
     &__logo
         width: 210px
         height: 48px
@@ -65,6 +111,7 @@ header .blob
                 margin-right: 40px
                 &:hover
                     color: $mainColor 
+
     &__btns
         display: flex
         align-content: center
@@ -99,6 +146,7 @@ header .blob
         font-size: 54px
         font-weight: 700
     &__description
+        width: 600px
         padding-top: 50px
         font-family: "Raleway", sans-serif
         font-size: 16px
@@ -110,14 +158,20 @@ header .blob
             @include orangeButton 
             
         &-detail
-            @include borderButton
+            @include transparentButton
             
-    &__food img
-        z-index: 1
-        position: absolute
-        left: 100%
-        top: 5%
-        transform: translateX(-100%)
+    &__food
+        img
+            width: 865px
+            height: 870px
+            z-index: 1
+            position: absolute
+            left: 100%
+            top: 15%
+            transform: translateX(-100%)
+    &__food-hide
+        img
+            display: none
 
 
 
@@ -136,12 +190,16 @@ header .blob
         font-size: 32px
         font-weight: 700
 
+.characteristic
+    height: 600px
+    &-arrows
+        display: none
+
 .characteristic-block
-    position: relative
+    margin: 0 auto
     padding-top: 20%
     z-index: 1
-
-
+    
     &__image
         display: flex
         flex-wrap: wrap
@@ -158,7 +216,7 @@ header .blob
         margin-top: 25px
 
 .about
-    margin-top: 139px
+    
     &-blob
         position: relative
         bottom: 375px
@@ -172,17 +230,16 @@ header .blob
 
 
     &-women
-        width: 710px
-        height: 590px
+        max-width: 710px
+        max-height: 590px
         position: relative
-        right: 65px
 
 
 
     &__descr
-        
+        margin-left: 125px
         &-hint
-            margin-top: 75px
+            margin-top: 121px
             color: $mainColor
             font-size: 16px
             
@@ -190,6 +247,8 @@ header .blob
             font-family: 'Playfair Display', serif
             font-size: 32px
             word-wrap: normal
+            position: relative
+            z-index: 5
         &-subtitle
             margin-top: 30px
             font-size: 16px
@@ -197,17 +256,24 @@ header .blob
             font-weight: 400
             line-height: 140%
             word-wrap: normal
-        button
-            @include orangeButton
-            margin-top: 35px
-            width: 180px
-            height: 50px
+            position: relative
+            z-index: 5
+    &__btn
+        position: relative
+        z-index: 5
+        margin: 35px 0 0 125px
+        @include orangeButton
+        width: 180px
+        height: 50px
 
-
+    .hide
+        display: none
 
 .menu
+    margin-top: 120px
     &__button
-        @include borderButton
+        @include transparentButton
+        
         display: block
         margin: 80px auto 0 auto
     &__description
@@ -223,7 +289,9 @@ header .blob
             margin-top: 25px
             text-align: center
             font-size: 16px
-
+    &-arrows
+        display: none
+        
 
         
 
@@ -242,6 +310,7 @@ header .blob
             display: flex
             justify-content: center
             align-items: center
+            
             &-add
                 width: 50px
                 height: 50px
@@ -266,6 +335,8 @@ header .blob
                 color: #000
                 font-family: Playfair Display
                 font-size: 32px
+        &-other-descr
+            height: 100px
             
                 
             
@@ -285,9 +356,9 @@ header .blob
         font-size: 32px
     &__descr
         position: relative
-        margin-top: 25px
         font-size: 16px
-        margin-bottom: 75px
+        margin: 25px auto 75px auto
+        width: 710px
     &__blob
         display: flex
         justify-content: center
@@ -349,15 +420,15 @@ header .blob
             border: none
             box-shadow: 0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.02), 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.03), 0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.04), 0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.04), 0px 41.778px 33.422px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07)
         &-button
+            @include orangeButton
             width: 165px
-            background-color: $mainColor
-            border-radius: 10px
-            border: none
-            color: white
-            box-shadow: 0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.02), 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.03), 0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.04), 0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.04), 0px 41.778px 33.422px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07)
+            height: 75px
+            margin-right: 0px
+
 
 .footer-bottom
     height: 250px
+    opacity: 0.9
     background-color: #000
 
     
@@ -409,3 +480,5 @@ header .blob
             margin-right: 40px
             &:hover
                 color: $mainColor
+
+
